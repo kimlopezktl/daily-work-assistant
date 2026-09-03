@@ -12,7 +12,30 @@ Worklog/
     Daily Tracker.md
 ```
 
+Each monthly `Daily Tracker.md` is a human-readable Markdown work tracker. It is the source for personal planning, meetings, notes, and the current work queue; linked GitHub facts are verified separately before they are summarized or synced.
+
 The user-specific configuration is `<Worklog root>/.daily-work-assistant.yaml`. It defines the timezone, GitHub account and repositories, tracker naming convention, briefing preferences, and automation state.
+
+## Tracker file structure
+
+Each tracker follows this Markdown structure:
+
+```text
+Work Tracker — <Month YYYY>
+Current Work
+  Meetings and Deadlines
+  Needs Attention
+  In Progress
+  Waiting / Blocked
+Informational
+Backlog
+Completed Work
+Activity Log
+Related Notes
+Daily Entry Template
+```
+
+Active items have a concrete next action. Completed Work records an actual completion, merge, or close date. Activity Log entries use one provenance label: **User update**, **GitHub scan**, or **Assistant maintenance**.
 
 ## Install it
 
