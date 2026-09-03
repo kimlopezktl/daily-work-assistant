@@ -4,7 +4,7 @@ Use when the current month in the configured timezone lacks its expected tracker
 
 ## Compare Source and Destination
 
-Select the latest earlier monthly tracker as the proposed source and inspect any destination tracker. Never delete, rewrite, or “clean up” the source archive. If the destination exists, compare and propose a merge; never replace it wholesale.
+Select the latest earlier monthly tracker as the proposed source and inspect any destination tracker. Monthly folders use the configured year-qualified, sortable `YYYY-MM` convention. Never delete, rewrite, or “clean up” the source archive. If the destination exists, compare and propose a merge; never replace it wholesale.
 
 ## Carry Forward
 
@@ -18,6 +18,6 @@ Leave completed work and historical activity in the source. Carry completed cont
 
 ## Preview and Verify
 
-Show every item carried, omitted, merged, reclassified, or marked overdue, plus the proposed folder and filename. Explain destination conflicts. Wait for explicit approval.
+Show every item carried, omitted, merged, reclassified, or marked overdue, plus the proposed `YYYY-MM` destination folder and filename. Explain destination conflicts. Wait for explicit approval.
 
 After application, verify the destination structure and content and confirm the source is unchanged. Preserve existing Activity Log provenance labels, and label any migration bookkeeping entry **Assistant maintenance:**. Automation prompts should resolve the tracker dynamically from the Worklog root, so migration normally requires no prompt-path edit.

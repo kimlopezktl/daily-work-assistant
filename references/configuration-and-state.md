@@ -12,7 +12,7 @@ github:
   repositories:
     - owner/repository
 tracker:
-  month_directory_format: MMMM
+  month_directory_format: YYYY-MM
   filename: Daily Tracker.md
 brief:
   inclusion: {}
@@ -35,7 +35,7 @@ Values shown are examples, not universal defaults. Setup proposes defaults and l
 ## Resolution and Validation
 
 - Resolve dates and the current month in `timezone`.
-- Resolve the active tracker as `<root>/<formatted current month>/<filename>`.
+- Use a year-qualified, lexically chronological `YYYY-MM` month-directory format. Resolve the active tracker as `<root>/<formatted current month>/<filename>`.
 - Scan only `github.repositories`; never broaden to all accessible repositories.
 - Require a valid GitHub username and at least one `owner/repository` entry for GitHub modes.
 - Preserve unknown supported keys when changing configuration.

@@ -17,7 +17,7 @@ Present a concise recommended profile that the user can accept or customize. Ask
 - Backlog, blocked, waiting, informational, and completed-context inclusion.
 - Included/excluded labels, projects, and task types.
 - Staleness threshold, priority rules, recurring meetings, meeting preparation, quick-win duration, and Tomorrow at a glance.
-- Tracker month-folder and filename conventions.
+- Year-qualified, lexically sortable tracker month-folder convention (`YYYY-MM`) and filename.
 - Optional primary automation schedule and notification policy.
 
 Defaults are suggestions, not decisions. Store accepted choices in configuration.
@@ -31,6 +31,7 @@ Unless existing configuration or the user indicates otherwise, recommend:
 - Include blocked/waiting and informational context; use backlog only for feasible quick wins; include completed work only as active context.
 - Use 14 days as the initial staleness threshold, 30 minutes as the quick-win threshold, three top priorities, meeting-day preparation, and Tomorrow at a glance.
 - Enable no automation until the user accepts a schedule and notification policy.
+- Use `YYYY-MM` as the initial month-folder format; do not use a month-name-only format because it collides across years and does not sort chronologically.
 
 ## Proposal and Application
 
