@@ -14,6 +14,39 @@ Worklog/
 
 The user-specific configuration is `<Worklog root>/.daily-work-assistant.yaml`. It defines the timezone, GitHub account and repositories, tracker naming convention, briefing preferences, and automation state.
 
+## Install it
+
+Codex loads skills from `~/.codex/skills/<name>/`, so clone this repository directly into
+that path. The repository root is the skill, so do not nest it in a subfolder.
+
+```text
+git clone https://github.com/kimlopezktl/daily-work-assistant.git \
+  ~/.codex/skills/daily-work-assistant
+```
+
+Start a new Codex session afterward so the skill is picked up. To update later:
+
+```text
+git -C ~/.codex/skills/daily-work-assistant pull
+```
+
+A pull replaces only the instructions. It touches nothing user-specific: the Worklog, the
+tracker, `.daily-work-assistant.yaml`, and the scheduled automation all live outside this
+repository and survive updates untouched. Existing automation also needs no redeployment,
+because its prompt rereads the installed `SKILL.md` and references at the start of every
+run, so an updated skill changes the next brief on its own.
+
+Nothing else needs to run after a pull. On a **first** install there is no configuration
+yet, so begin with setup and supply the Worklog root:
+
+```text
+$daily-work-assistant set up my tracker. Worklog root is ~/Worklog.
+```
+
+Setup inspects the root, proposes configuration and a tracker, and waits for approval
+before writing. If a later update introduces new preferences, rerun the setup
+questionnaire — it reconfigures in place and does not reinitialize the tracker.
+
 ## Invoke it
 
 Use `$daily-work-assistant` followed by your request, for example:
