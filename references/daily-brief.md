@@ -38,6 +38,7 @@ Place one prominent sync-status line before the brief sections:
 ## Evidence Rules
 
 - Preserve relevant links.
+- Render every GitHub-issue reference anywhere in the brief as `[#<number> - <exact GitHub title>](<GitHub URL>)`.
 - Render every pull-request reference anywhere in the brief as `[PR #<number> - <exact GitHub title>](<GitHub URL>) — <concise meaningful description or status>.` Example: `[PR #62004 - Release for Tuesday, September 1st 2026](https://github.com/LexMachinaInc/deus_lex/pull/62004) — Open; aggregate CodeQL check failing.`
 - Render every substantive GitHub-attention source with why it surfaced. Include the attention type and a direct event or comment link when available.
 - If an attention item already appears elsewhere in the brief, keep its status in that section and add an `**Attention:**` note there, or add a short entry under **New GitHub attention** that cross-references the status section. De-duplicate status text, not attention evidence.
