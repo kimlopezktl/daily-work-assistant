@@ -1,0 +1,4 @@
+interface:
+  display_name: "Daily Work Assistant"
+  short_description: "Manage monthly trackers and GitHub-verified briefs"
+  default_prompt: "Use $daily-work-assistant to prepare or maintain my daily work tracker."
