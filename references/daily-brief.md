@@ -11,11 +11,12 @@ Use these sections in order, omitting an empty section when omission is clearer:
 3. **New GitHub attention** — configured-repository discoveries absent from or newly relevant to the tracker.
 4. **GitHub review queue** — separate review requests from PR assignments using the structure below.
 5. **Work in progress** — verified current state and next concrete action.
-6. **Blocked or waiting** — blocker, reason, and who or what is awaited.
-7. **Informational release context** — relevant release state and the user’s included work or reviews.
-8. **Quick wins** — tasks fitting the configured duration and feasible today.
-9. **Suggested plan** — a practical sequence for the day.
-10. **Tomorrow at a glance** — events, likely carry-over, preparation needed today, and suggested focus blocks.
+6. **Learning** — active learning journeys and courses.
+7. **Blocked or waiting** — blocker, reason, and who or what is awaited.
+8. **Informational release context** — relevant release state and the user’s included work or reviews.
+9. **Quick wins** — tasks fitting the configured duration and feasible today.
+10. **Suggested plan** — a practical sequence for the day.
+11. **Tomorrow at a glance** — events, likely carry-over, preparation needed today, and suggested focus blocks.
 
 On a meeting day, rank a concrete preparation action above lower-impact work. Do not treat a cancelled occurrence as active. Exclude completed work unless it explains active work.
 
