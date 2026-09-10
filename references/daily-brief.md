@@ -20,6 +20,10 @@ Use these sections in order, omitting an empty section when omission is clearer:
 
 On a meeting day, rank a concrete preparation action above lower-impact work. Do not treat a cancelled occurrence as active. Exclude completed work unless it explains active work.
 
+List every uncompleted scheduled or recurring meeting occurring today through the next seven calendar days. Include a scheduled meeting farther ahead when it is time-sensitive or requires preparation today. Do not omit a meeting merely to make the brief shorter.
+
+Under Meetings and deadlines, render a meeting's note directly beneath that meeting when it is relevant to today or the next seven calendar days. Summarize long notes while preserving important links and concrete preparation or follow-up actions.
+
 ### Priority and Review Queue Rules
 
 - A pull request may appear in **Top priorities** only when it is explicitly assigned to the configured user. A review request without assignment stays out of Top priorities, regardless of urgency.
@@ -27,6 +31,10 @@ On a meeting day, rank a concrete preparation action above lower-impact work. Do
 - Structure **GitHub review queue** with these subsections when nonempty: **Review requested from you**, **PRs assigned to you**, **Re-review or author response pending**, **Draft, on hold, or stale**, and **Completed today**.
 - Render a PR only once in the queue. When it matches multiple subsections, assignment takes precedence; note its review-request or re-review state in the assigned entry.
 - Include **Completed today** only when a completed PR both provides useful context for the current day and has active participation from the configured user. Active participation means the user authored or was assigned to the PR, submitted a review, made a substantive comment or commit, or explicitly directed its inclusion. A review request alone is not active participation.
+
+### Learning
+
+Render tracker items tagged `learning` in this separate section. Preserve their direct learning links and actionable completion state. Do not repeat them under Work in progress, Quick wins, or Suggested plan unless the user explicitly prioritizes one for today.
 
 ## Tracker Sync Status
 

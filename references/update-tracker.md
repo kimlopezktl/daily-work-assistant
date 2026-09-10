@@ -4,11 +4,13 @@ Record user-provided planning information while keeping GitHub facts verified.
 
 ## Supported Changes
 
-- Priorities, meetings, recurring events, deadlines, and preparation.
+- Priorities, meetings, recurring events, deadlines, preparation, and meeting notes.
 - Progress, decisions, blockers, waiting state, and next actions.
 - Informational or release context, backlog, cancellations, and not-doing decisions.
 - Completion with an actual completion date.
 - Briefing preferences through Setup reconfiguration rather than ad hoc tracker notes.
+
+Attach a meeting note to the matching meeting entry. Notes may cover agenda, preparation, decisions, outcomes, links, or follow-ups; preserve the meeting's date, time, and recurrence.
 
 Verify every linked issue or pull request affected by the request. If user input conflicts with GitHub, retain the user’s planning fact and the GitHub fact in their proper fields and show the difference. Do not label an open GitHub item merged or closed.
 
