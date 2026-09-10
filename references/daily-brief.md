@@ -39,6 +39,8 @@ Render tracker items tagged `learning` in this separate section. Preserve their 
 
 ## Tracker Sync Status
 
+When a complete Sync Tracker scan has succeeded earlier in the same conversation and no later GitHub-affecting tracker update has occurred, reuse that verified state for the Daily Brief. Render the corresponding `Tracker sync: No tracker sync needed` or `Tracker sync recommended` result; do not label the scan undetermined solely because a second scan was not run immediately before the brief.
+
 Place one prominent sync-status line before the brief sections:
 
 - When complete verification finds one or more differences that would change the tracker, write `**Tracker sync recommended:**` followed by the number of affected items, linked item labels, and a concise reason. Suggest running `$daily-work-assistant` in Sync Tracker mode; do not modify the tracker from Daily Brief mode.
