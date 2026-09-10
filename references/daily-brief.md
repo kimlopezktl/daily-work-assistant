@@ -27,6 +27,7 @@ Under Meetings and deadlines, render a meeting's note directly beneath that meet
 ### Priority and Review Queue Rules
 
 - A pull request may appear in **Top priorities** only when it is explicitly assigned to the configured user. A review request without assignment stays out of Top priorities, regardless of urgency.
+- Never list a PR in Top priorities unless GitHub explicitly lists the configured user as an assignee. This applies even when the PR is review-ready, green, urgent, or has a direct review request. Place every unassigned review-only PR exclusively in GitHub review queue; do not mention it in Top priorities, Suggested plan, or Quick wins.
 - Put review-only PRs under **Review requested from you**. Do not duplicate their status in Top priorities, Work in progress, Blocked or waiting, Quick wins, or Suggested plan; cross-reference the review queue when needed.
 - Structure **GitHub review queue** with these subsections when nonempty: **Review requested from you**, **PRs assigned to you**, **Re-review or author response pending**, **Draft, on hold, or stale**, and **Completed today**.
 - Render a PR only once in the queue. When it matches multiple subsections, assignment takes precedence; note its review-request or re-review state in the assigned entry.
