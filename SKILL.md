@@ -32,4 +32,6 @@ For any file or automation mutation, present the exact proposed changes and wait
 
 After approval, apply only the proposal, reread affected state, and report verification. Stop and report exact partial results if application fails.
 
+After every successful tracker update or sync, always present the updated Daily Brief in the same response. Do not stop after reporting the mutation or verification. The refreshed brief must reflect the applied changes and follow the full Daily Brief output contract.
+
 Daily Brief and automation viewing are read-only. The sole no-approval write is `state.last_successful_github_scan`, and only after every required linked-item lookup and configured-repository attention query succeeds.
