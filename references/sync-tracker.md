@@ -12,6 +12,10 @@ Run complete GitHub Verification, then compare tracked and discovered items. Ide
 - Closed or merged work and its GitHub completion date.
 - Newly actionable untracked items from the attention scan.
 
+Before building a sync proposal, enumerate every GitHub issue and pull request in the tracker's active sections and query each item directly. Do this independently of the attention scan and regardless of its `updatedAt` value.
+
+For every active tracked PR, explicitly retrieve and compare `state`, `mergedAt`, `closedAt`, `mergeable`, CI, review decision, requested reviewers, and unresolved conversations. Classify a merged or closed PR before processing attention results. Never limit sync verification to newly assigned, mentioned, or review-requested items.
+
 A mention alone stays in attention unless assignment, requested action, inclusion preferences, or user direction makes it tracker work.
 
 ## Preview
