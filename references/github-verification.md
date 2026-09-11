@@ -30,8 +30,12 @@ Also retrieve every currently open pull request authored by the configured user 
 `brief.inclusion.authored_pull_requests` is `open`. Include drafts in that query;
 the setting describes GitHub's open state, not only PRs ready for review. Retrieve
 the same review, CI, mergeability, unresolved-conversation, and meaningful-activity
-details required for linked PRs. This authored-PR query is independent of the
-since-last-scan attention queries.
+details required for linked PRs. For each authored PR, also retrieve commits and
+timeline events authored by the configured user since the last successful scan and
+on the current local date, including ready-for-review, draft conversion, and review
+request events. Retain meaningful implementation, review-request, and status-change
+activity for the Activity Log and Today’s progress; omit routine metadata events.
+This authored-PR query is independent of the since-last-scan attention queries.
 
 Paginate until the interval is fully covered. De-duplicate linked and discovered items. For each result retain why it surfaced, current state, latest meaningful activity, blockers or review/CI state, and next action.
 
