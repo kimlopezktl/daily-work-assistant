@@ -51,6 +51,7 @@ Under Meetings and deadlines, render a meeting's note directly beneath that meet
 - A pull request may appear in **Top priorities** only when it is explicitly assigned to the configured user. A review request without assignment stays out of Top priorities, regardless of urgency.
 - Never list a PR in Top priorities unless GitHub explicitly lists the configured user as an assignee. This applies even when the PR is review-ready, green, urgent, or has a direct review request. Place every unassigned review-only PR exclusively in GitHub review queue; do not mention it in Top priorities, Suggested plan, or Quick wins.
 - Put review-only PRs under **Review requested from you**. Do not duplicate their status in Top priorities, Work in progress, Blocked or waiting, Quick wins, or Suggested plan; cross-reference the review queue when needed.
+- In a **Review requested from you** entry, add a concise `**Your activity:**` note for a same-day update involving the configured user: a submitted review or comment, a new review request, or an author response that addresses the user's feedback. Keep unrelated author activity and routine CI or bot changes out of this note.
 - Structure **GitHub review queue** with these subsections when nonempty: **PRs authored by you**, **PRs assigned to you**, **Review requested from you**, **Re-review or author response pending**, **Draft, on hold, or stale**, and **Completed today**.
 - When `brief.inclusion.authored_pull_requests` is `open`, list every open PR authored by the configured user in **PRs authored by you**, including drafts. Show its state, CI, review state, blocker, and next action.
 - Render a PR only once in the queue. When it matches multiple subsections, authored status takes precedence, then assignment; note any review-request or re-review state in that entry.
@@ -62,11 +63,18 @@ Render tracker items tagged `learning` in this separate section. Preserve their 
 
 ### Today’s Progress
 
-Summarize meaningful activity recorded for the current date with the exact
-`**User update:**` provenance label: completed work, meetings, decisions,
-progress, and follow-ups. Keep GitHub-scan discoveries in their existing GitHub
-sections; do not represent them as user activity. If no same-day user update is
-recorded, state that briefly instead of inferring progress.
+Summarize meaningful activity for the current date from both:
+
+- Tracker entries with the exact `**User update:**` provenance label, such as
+  completed work, meetings, decisions, progress, and follow-ups.
+- GitHub-verified actions authored by the configured user: submitted reviews,
+  review comments, commits, PR openings or closures, and assignments.
+
+Label the first kind `**Your update:**` and the second `**Your GitHub activity:**`
+in the rendered section. Keep other people's activity and generic scan discoveries
+in their existing GitHub sections; do not represent them as user activity. If no
+same-day activity from either source is recorded, state that briefly instead of
+inferring progress.
 
 ## Tracker Sync Status
 

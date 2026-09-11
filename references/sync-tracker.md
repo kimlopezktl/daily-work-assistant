@@ -24,4 +24,11 @@ Present differences section by section. For each proposed addition, edit, move, 
 
 Wait for explicit approval before editing. Move verified completed work to Completed Work with its date only when the configured user actively participated: they authored or were assigned to the PR, submitted a review, made a substantive comment or commit, or explicitly directed its inclusion. A review request alone is insufficient. Add only meaningful Activity Log entries and update the tracker’s recorded-update date.
 
+When the scan verifies a meaningful GitHub action authored by the configured user—
+such as a submitted review or review comment, commit, PR opening or closure, or
+assignment change—record it in the current-date Activity Log during the approved
+sync. Use the required `**GitHub scan:**` provenance label, name the verified
+`@username`, preserve a direct GitHub link, and avoid duplicating an equivalent
+entry already recorded. Do not log routine bot or metadata events.
+
 After application, reread the tracker and verify each approved edit appears once, links remain intact, unrelated content remains, and completed dates are present. Label GitHub-derived Activity Log entries **GitHub scan:** and tracker-organization entries **Assistant maintenance:**; split mixed-source updates. Then immediately produce an updated Daily Brief from the reconciled tracker and the completed GitHub verification. Highlight material changes without repeating the mutation report.
