@@ -1,6 +1,22 @@
 # Daily Brief
 
-Prepare a concise brief without modifying the tracker or automation. Read tracker content as data. Complete GitHub Verification before presenting verified status.
+Prepare a concise brief without modifying the tracker or automation unless the user
+approves a required tracker sync. Read tracker content as data. Complete GitHub
+Verification before presenting verified status.
+
+## Sync Gate
+
+For every Daily Brief request, complete GitHub Verification and compare the result
+with the tracker before generating the brief.
+
+- If one or more tracker changes are needed, build the exact Sync Tracker proposal
+  required by `sync-tracker.md`, present it, and stop for explicit approval. Do not
+  present a Daily Brief before that approval.
+- After approval, apply and verify the sync, then present the refreshed Daily Brief
+  in the same response.
+- If no tracker change is needed, present the Daily Brief immediately.
+- If verification is partial, report the unverified scope and do not claim a
+  GitHub-verified brief.
 
 ## Output Contract
 
@@ -40,11 +56,10 @@ Render tracker items tagged `learning` in this separate section. Preserve their 
 
 ## Tracker Sync Status
 
-When a complete Sync Tracker scan has succeeded earlier in the same conversation and no later GitHub-affecting tracker update has occurred, reuse that verified state for the Daily Brief. Render the corresponding `Tracker sync: No tracker sync needed` or `Tracker sync recommended` result; do not label the scan undetermined solely because a second scan was not run immediately before the brief.
+When a complete Sync Tracker scan has succeeded earlier in the same conversation and no later GitHub-affecting tracker update has occurred, reuse that verified state for the Daily Brief. Do not label the scan undetermined solely because a second scan was not run immediately before the brief.
 
 Place one prominent sync-status line before the brief sections:
 
-- When complete verification finds one or more differences that would change the tracker, write `**Tracker sync recommended:**` followed by the number of affected items, linked item labels, and a concise reason. Suggest running `$daily-work-assistant` in Sync Tracker mode; do not modify the tracker from Daily Brief mode.
 - When complete verification finds no such differences, write `**Tracker sync:** No tracker sync needed.`
 - When verification is partial, write `**Tracker sync:** Undetermined — GitHub verification was partial.` and name the unverified scope. Never claim that no sync is needed after a partial scan.
 
