@@ -71,10 +71,12 @@ Summarize meaningful activity for the current date from both:
   review comments, commits, PR openings or closures, and assignments.
 
 Label the first kind `**Your update:**` and the second `**Your GitHub activity:**`
-in the rendered section. Keep other people's activity and generic scan discoveries
-in their existing GitHub sections; do not represent them as user activity. If no
-same-day activity from either source is recorded, state that briefly instead of
-inferring progress.
+in the rendered section. Preserve direct links and concrete meeting outcomes,
+decisions, and follow-ups from a same-day user update when they help the user act;
+summarize rather than copy all notes verbatim. Keep other people's activity and
+generic scan discoveries in their existing GitHub sections; do not represent them
+as user activity. If no same-day activity from either source is recorded, state
+that briefly instead of inferring progress.
 
 ## Tracker Sync Status
 
