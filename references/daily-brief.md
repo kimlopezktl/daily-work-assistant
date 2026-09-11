@@ -9,6 +9,11 @@ Verification before presenting verified status.
 For every Daily Brief request, complete GitHub Verification and compare the result
 with the tracker before generating the brief.
 
+When reusing a prior complete linked-item verification from the same conversation,
+always rerun every configured-repository attention query from
+`state.last_successful_github_scan` before comparison. Never reuse an earlier
+attention result or its no-difference conclusion without this refresh.
+
 - If one or more tracker changes are needed, build the exact Sync Tracker proposal
   required by `sync-tracker.md`, present it, and stop for explicit approval. Do not
   present a Daily Brief before that approval.
@@ -31,8 +36,9 @@ Use these sections in order, omitting an empty section when omission is clearer:
 7. **Blocked or waiting** — blocker, reason, and who or what is awaited.
 8. **Informational release context** — relevant release state and the user’s included work or reviews.
 9. **Quick wins** — tasks fitting the configured duration and feasible today.
-10. **Suggested plan** — a practical sequence for the day.
-11. **Tomorrow at a glance** — events, likely carry-over, preparation needed today, and suggested focus blocks.
+10. **Today’s progress** — meaningful user-recorded work completed or advanced today.
+11. **Suggested plan** — a practical sequence for the day.
+12. **Tomorrow at a glance** — events, likely carry-over, preparation needed today, and suggested focus blocks.
 
 On a meeting day, rank a concrete preparation action above lower-impact work. Do not treat a cancelled occurrence as active. Exclude completed work unless it explains active work.
 
@@ -54,9 +60,21 @@ Under Meetings and deadlines, render a meeting's note directly beneath that meet
 
 Render tracker items tagged `learning` in this separate section. Preserve their direct learning links and actionable completion state. Do not repeat them under Work in progress, Quick wins, or Suggested plan unless the user explicitly prioritizes one for today.
 
+### Today’s Progress
+
+Summarize meaningful activity recorded for the current date with the exact
+`**User update:**` provenance label: completed work, meetings, decisions,
+progress, and follow-ups. Keep GitHub-scan discoveries in their existing GitHub
+sections; do not represent them as user activity. If no same-day user update is
+recorded, state that briefly instead of inferring progress.
+
 ## Tracker Sync Status
 
-When a complete Sync Tracker scan has succeeded earlier in the same conversation and no later GitHub-affecting tracker update has occurred, reuse that verified state for the Daily Brief. Do not label the scan undetermined solely because a second scan was not run immediately before the brief.
+When a complete Sync Tracker scan has succeeded earlier in the same conversation,
+reuse its linked-item verification only after refreshing every configured-repository
+attention query from `state.last_successful_github_scan`. New attention must pass
+through the Sync Gate; do not label the scan undetermined solely because linked
+items did not need a second direct lookup.
 
 Place one prominent sync-status line before the brief sections:
 
