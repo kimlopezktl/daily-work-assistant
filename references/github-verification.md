@@ -47,7 +47,7 @@ For every attention result, retain one or more source records containing:
 - Actor, timestamp, and direct event or comment URL when available.
 - A concise explanation of why the event is actionable or informational.
 
-For mention results, inspect comments or timeline activity in the scan interval to locate the actual mention. A notification or supplied URL may point to an adjacent reply rather than the comment containing `@<username>`; retain the direct mention as the source and the adjacent reply only as supporting context.
+For mention results, inspect comments or timeline activity in the scan interval to locate the actual mention. A notification or supplied URL may point to an adjacent reply rather than the comment containing `@<username>`; retain the direct mention as the source and the adjacent reply only as supporting context. Retain qualifying open pull-request mentions for the Daily Brief's **PRs mentioning you** subsection, including actor, timestamp, direct comment URL, and why the mention is actionable.
 
 De-duplication merges attention evidence into the linked or discovered item. Never discard an attention source because the issue or PR is already linked in the tracker or will be described in another brief section. Routine bot noise and metadata-only updates may be excluded, but retain an explicit exclusion reason for coverage validation.
 
