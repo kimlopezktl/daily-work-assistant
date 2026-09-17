@@ -25,7 +25,7 @@ attention result or its no-difference conclusion without this refresh.
 
 ## Output Contract
 
-Use these sections in order, omitting an empty section when omission is clearer:
+Use these sections in order, omitting an empty section when omission is clearer. Always render **Work in progress**.
 
 1. **Top priorities** — up to five, ordered by urgency and impact.
 2. **Meetings and deadlines** — scheduled, recurring, overdue, or time-sensitive items.
@@ -62,6 +62,18 @@ Under Meetings and deadlines, render a meeting's note directly beneath that meet
 ### Learning
 
 Render tracker items tagged `learning` in this separate section. Preserve their direct learning links and actionable completion state. Do not repeat them under Work in progress, Quick wins, or Suggested plan unless the user explicitly prioritizes one for today.
+
+### Work in Progress
+
+Render one detailed entry for every active, non-review-only tracker item. Begin each
+entry with a concise **Summary:** line describing progress completed or advanced so
+far; never restate the item's title, generic scope, or objective. Then include its
+verified or user-supplied current status, meaningful current context, and a blocker
+or dependency when relevant. Render the tracker item's **Next** text verbatim,
+including links and multi-step detail; never paraphrase, truncate, or replace it.
+Historical context may be summarized. Do not replace this section with a brief
+cross-reference or omit it because the item also appears in Top priorities.
+Review-only pull requests remain exclusively in **GitHub review queue**.
 
 ### Today’s Progress
 
