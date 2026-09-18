@@ -42,6 +42,12 @@ Use these sections in order, omitting an empty section when omission is clearer.
 
 On a meeting day, rank a concrete preparation action above lower-impact work. Do not treat a cancelled occurrence as active. Exclude completed work unless it explains active work.
 
+Use the tracker’s ordered `Top Priorities` section as the durable starting point for
+this section. Apply only verified urgent changes and same-day meeting preparation to
+the rendered ordering. When that tracker section is missing, stale, or inconsistent
+with verified active work, include the necessary change in the Sync Gate proposal;
+never silently rewrite it during a read-only brief.
+
 List every uncompleted scheduled or recurring meeting occurring today through the next seven calendar days. Include a scheduled meeting farther ahead when it is time-sensitive or requires preparation today. Do not omit a meeting merely to make the brief shorter.
 
 Under Meetings and deadlines, render a meeting's note directly beneath that meeting when it is relevant to today or the next seven calendar days. Summarize long notes while preserving important links and concrete preparation or follow-up actions.

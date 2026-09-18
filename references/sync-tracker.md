@@ -11,6 +11,9 @@ Run complete GitHub Verification, then compare tracked and discovered items. Ide
 - Meaningful activity, blockers, and next actions.
 - Closed or merged work and its GitHub completion date.
 - Newly actionable untracked items from the attention scan.
+- The ordered `Top Priorities` section: remove completed or inactive entries, correct
+  stale GitHub facts, and propose additions or ordering changes justified by verified
+  urgency, user direction, or same-day meeting preparation.
 
 Before building a sync proposal, enumerate every GitHub issue and pull request in the tracker's active sections and query each item directly. Do this independently of the attention scan and regardless of its `updatedAt` value.
 

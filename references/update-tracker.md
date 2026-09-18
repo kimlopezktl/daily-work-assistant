@@ -12,6 +12,10 @@ Record user-provided planning information while keeping GitHub facts verified.
 
 Attach a meeting note to the matching meeting entry. Notes may cover agenda, preparation, decisions, outcomes, links, or follow-ups; preserve the meeting's date, time, and recurrence.
 
+When a priority is added, reprioritized, completed, or no longer active, update the
+ordered `Top Priorities` tracker section in the same approved change. Keep no more
+than the configured number of active entries and give each one a concrete target.
+
 Verify every linked issue or pull request affected by the request. If user input conflicts with GitHub, retain the user’s planning fact and the GitHub fact in their proper fields and show the difference. Do not label an open GitHub item merged or closed.
 
 Build an exact preview showing target section, current text, proposed text, link handling, classification, completion date, and Activity Log entry. Ask one focused question if a required completion date or materially different classification cannot be inferred safely. Wait for explicit approval.

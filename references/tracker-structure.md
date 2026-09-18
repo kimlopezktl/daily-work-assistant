@@ -5,6 +5,7 @@ Preserve the tracker’s readable style and unrelated content. Use the following
 ```text
 Work Tracker — <Month YYYY>
 Current Work
+  Top Priorities
   Meetings and Deadlines
   Needs Attention
   In Progress
@@ -20,6 +21,7 @@ Daily Entry Template
 ## Invariants
 
 - Keep only active work under Current Work.
+- Keep `Top Priorities` directly under Current Work when present. It contains up to the configured number of ordered active priorities, each with a concrete target; it is the tracker's durable priority record.
 - Give an active item one concrete next action.
 - Preserve relevant issue and pull-request links.
 - Avoid duplicate task entries; cross-reference instead of repeating details.
