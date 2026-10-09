@@ -25,6 +25,7 @@ Work Tracker — <Month YYYY>
 Current Work
   Meetings and Deadlines
   Needs Attention
+  Todos
   In Progress
   Waiting / Blocked
 Informational

@@ -33,12 +33,13 @@ Use these sections in order, omitting an empty section when omission is clearer.
 4. **GitHub review queue** — separate review requests from PR assignments using the structure below.
 5. **Work in progress** — verified current state and next concrete action.
 6. **Learning** — active learning journeys and courses.
-7. **Blocked or waiting** — blocker, reason, and who or what is awaited.
-8. **Informational release context** — relevant release state and the user’s included work or reviews.
-9. **Quick wins** — tasks fitting the configured duration and feasible today.
-10. **Today’s progress** — meaningful user-recorded work completed or advanced today.
-11. **Suggested plan** — a practical sequence for the day.
-12. **Tomorrow at a glance** — events, likely carry-over, preparation needed today, and suggested focus blocks.
+7. **Todos** — unchecked tasks from the tracker’s Todos checklist.
+8. **Blocked or waiting** — blocker, reason, and who or what is awaited.
+9. **Informational release context** — relevant release state and the user’s included work or reviews.
+10. **Quick wins** — tasks fitting the configured duration and feasible today.
+11. **Today’s progress** — meaningful user-recorded work completed or advanced today.
+12. **Suggested plan** — a practical sequence for the day.
+13. **Tomorrow at a glance** — events, likely carry-over, preparation needed today, and suggested focus blocks.
 
 On a meeting day, rank a concrete preparation action above lower-impact work. Do not treat a cancelled occurrence as active. Exclude completed work unless it explains active work.
 
@@ -68,6 +69,13 @@ Under Meetings and deadlines, render a meeting's note directly beneath that meet
 ### Learning
 
 Render tracker items tagged `learning` in this separate section. Preserve their direct learning links and actionable completion state. Do not repeat them under Work in progress, Quick wins, or Suggested plan unless the user explicitly prioritizes one for today.
+
+### Todos
+
+Render only unchecked Markdown tasks (`- [ ]`) from the tracker’s **Todos** section.
+Preserve the tracker task text, direct links, and explicit deadline or status context.
+Do not include prose headings, active-work **Next** steps, GitHub review-queue
+entries, or completed work. Omit this section when no qualifying tasks exist.
 
 ### Work in Progress
 
